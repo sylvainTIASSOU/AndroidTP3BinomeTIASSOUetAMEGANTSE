@@ -1,0 +1,160 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESULTAT SPORTIF"
+                android:textSize="35dp"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/lbl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom du Lieu De La compétition"
+                android:layout_marginTop="35dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Localisation"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:background="#DDDBDB"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:typeface="serif"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/lbl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom du/de la gagnat(e)"
+                android:layout_marginTop="35dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Nom"
+                android:layout_gravity="center"
+                android:background="#DDDBDB"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:typeface="serif"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#DDDBDB"
+                    android:gravity="center"
+                    android:hint="10/20/2001"
+                    android:inputType="date"
+                    android:textColor="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/lbl9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="35dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#DDDBDB"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Commentaire"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+                    android:background="#DDDBDB"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:hint="tapez votre commentaire"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENVOYER"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
